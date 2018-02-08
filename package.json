@@ -8,13 +8,12 @@
     "react-dom": "~16.2.0",
     "react-scripts": "1.1.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "format": "prettier-eslint \"src/**/*.js\" --write",
-    "precommit": "lint-staged"
+  "devDependencies": {
+    "enzyme": "~3.3.0",
+    "enzyme-adapter-react-16": "~1.1.1",
+    "husky": "~0.14.3",
+    "lint-staged": "~6.1.0",
+    "prettier-eslint-cli": "~4.7.0"
   },
   "lint-staged": {
     "*.js": [
@@ -22,9 +21,12 @@
       "git add"
     ]
   },
-  "devDependencies": {
-    "husky": "~0.14.3",
-    "lint-staged": "~6.1.0",
-    "prettier-eslint-cli": "~4.7.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "format": "prettier-eslint \"src/**/*.js\" --write",
+    "precommit": "lint-staged"
   }
 }
